@@ -1,3 +1,1 @@
-# SWE1: Software Engineering Foundations
-
-# base-node-swe1
+# Rocket Academy Coding Bootcamp: Noodles Express
