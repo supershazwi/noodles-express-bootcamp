@@ -4,9 +4,10 @@ This exercise is a post-class exercise for Rocket Academy to create a noodle rec
 
 ## Usage
 
-##### Get single recipe by index
+### Get single recipe by index
 
 http://localhost:3004/recipe/:index
+
 http://localhost:3004/recipe/1
 
 ```json
@@ -22,9 +23,10 @@ http://localhost:3004/recipe/1
 }
 ```
 
-##### Get recipes by label
+### Get recipes by label
 
 http://localhost:3004/recipe-label/:label
+
 http://localhost:3004/recipe-label/udon-noodle-soup
 
 ```json
