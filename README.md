@@ -22,6 +22,44 @@ http://localhost:3004/recipe/1
 }
 ```
 
+##### Get recipe by yield
+
+http://localhost:3004/yield/:index
+http://localhost:3004/yield/1
+
+```json
+[
+  {
+    "source": "My Recipes",
+    "label": "Noodle Bowl",
+    "url": "http://www.edamam.com/recipe/noodle-bowl-a4d6a51b0acb9ae51267830cd011d39f/noodle",
+    "ingredients": "1 (3-oz.) package Oriental-flavored ramen noodle soup mix\n2 cups water\n1 chopped green onion\n2 tablespoons chopped fresh cilantro\n1/2 cup fresh snow peas, trimmed\n6 peeled and deveined medium-size raw shrimp (26/30 count)\n1/4 cup shredded napa cabbage\n1 to 2 Tbsp. chopped peanuts",
+    "yield": 1,
+    "caution": "Sulfites",
+    "image": "https://www.edamam.com/web-img/b88/b88acc0af1ce23b50042d7d24e8a33d7.jpg"
+  },
+  {
+    "source": "BBC Good Food",
+    "label": "Seafood Noodle Soup",
+    "url": "http://www.edamam.com/recipe/seafood-noodle-soup-01b822e1744a30e789917e7e64e96d38/noodle",
+    "ingredients": "50 g dried egg noodles\n100 g mushrooms (chestnut are good, but any will do), sliced\n1 tsp fish sauce\n25 g squid rings\n100 g mange tout, halved\n50 g cooked mussels\nchilli to taste\n40 g red pepper, sliced\n1/2 tsp garlic paste\n100 g carrot, sliced\n1 tsp olive oil\n50 g baby sweetcorn, halved\n1 tsp vegetable buillion powder",
+    "yield": 1,
+    "caution": "Shellfish",
+    "image": "https://www.edamam.com/web-img/c07/c07efdfcc1d4a76fdf517280d2410f0b.jpg"
+  },
+  {
+    "source": "My Recipes",
+    "label": "Miso Noodle Soup",
+    "url": "http://www.edamam.com/recipe/miso-noodle-soup-fe2a16741057ec951b4b0b890e54cfe2/noodle",
+    "ingredients": "1 tablespoon white miso\n1 tablespoon warm water\n1 teaspoon toasted sesame oil\n1/2 small garlic clove, grated\n1/3 cup thinly sliced red cabbage\n1/2 cup cooked flat brown rice (pad Thai) noodles (about 1 oz. uncooked)\n2 shiitake mushroom caps, thinly sliced\n1 tablespoon chopped green onions\n4 thin slices red jalapeño\n1 tablespoon chopped fresh cilantro\n1/2 hard-cooked large egg",
+    "yield": 1,
+    "caution": "Gluten",
+    "image": "https://www.edamam.com/web-img/57a/57a08db80f149389905e060f730db827.jpg",
+    "category": "Alcohol-Free"
+  }
+]
+```
+
 ##### Get recipes by label
 
 http://localhost:3004/recipe-label/:label

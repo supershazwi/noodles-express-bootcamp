@@ -35,6 +35,23 @@ const getRecipesByLabel = (request, response) => {
   });
 }
 
+const getRecipesByYield = (request, response) => {
+  read('data.json', (readErr, data) => {
+    if (!readErr) {
+      const filteredData = data['recipes'].filter((recipe) => {
+        return recipe["yield"] === parseInt(request.params.yield);
+      });
+
+      if (filteredData.length === 0) {
+        response.status(404).send('Sorry, we cannot find that!');
+      } else {
+        response.send(filteredData);
+      }
+    }
+  });
+}
+
+app.get('/yield/:yield', getRecipesByYield);
 app.get('/recipe-label/:label', getRecipesByLabel);
 app.get('/recipe/:index', getRecipe);
 
