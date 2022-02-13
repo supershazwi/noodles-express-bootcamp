@@ -20,8 +20,8 @@ const getRecipe = (request, response) => {
 const getRecipesByLabel = (request, response) => {
   read('data.json', (readErr, data) => {
     if (!readErr) {
-      const label = request.params.label.replace(/-/g, " ");
-      const regularExp = new RegExp(`${label}`, 'i');
+      const matchLabel = request.params.label.replace(/-/g, " ");
+      const regularExp = new RegExp(`${matchLabel}`, 'i');
       const filteredData = data['recipes'].filter((recipe) => {
         return recipe["label"].match(regularExp);
       });
